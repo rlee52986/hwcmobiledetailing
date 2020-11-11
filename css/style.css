@@ -108,7 +108,7 @@ body {
 /*===== FIXED BACKGROUND IMG =====*/
 
 .fixed {
-  background-image: url('../img/matrix.jpg');
+  background-image: url('../img/carousel/3truck.jpg');
   position: fixed;
 }
 .fixed-background {
@@ -116,7 +116,7 @@ body {
 }
 
 /*-- Emoji Navbar --*/
-.emoji {
+/* .emoji {
   background-image: linear-gradient(to right, #4981b3, #ac2615);
   min-height: 0!important;
   padding: .4rem 0!important;
@@ -125,7 +125,7 @@ body {
   margin: 0 auto;
   color: white;
   font-size: 2rem;
-}
+} */
 
 
 /*============= FOOTER =============*/
@@ -135,7 +135,7 @@ footer {
 }
 
 footer img {
-  height: 3.5rem;
+  height: 7rem;
   margin: 1.5rem auto;
 }
 
