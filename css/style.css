@@ -1,58 +1,70 @@
 /*-- Body Reset --*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #616971;
 }
 
+.lightBg {
+    background-color: #f3f2f5
+}
+
 /*============= TOP BAR HEADER =============*/
+
 .top-bar {
   background: #091f9e;
   height: 2.8rem;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
+
 .top-bar a {
   color: white;
   text-decoration: none;
   font-size: 1.1rem;
 }
 
-
 /*============= NAVIGATION =============*/
+
 .navbar-brand img {
   height: 7rem;
 }
+
 .navbar {
-  font-size: 1.15rem;
+  font-size: 0.99rem;
   font-weight: 600;
-  letter-spacing: .1rem;
-  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.1rem;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
+
 .nav-item {
-  padding: .5rem;
-}
-.nav-link {
-  color: #5b5555!important;
-}
-.nav-link.active, 
-.nav-link:hover {
-  color: #000000!important;
+  padding: 0.5rem;
 }
 
+.nav-link {
+  color: #5b5555 !important;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #000000 !important;
+}
 
 /*============= CAROUSEL =============*/
 
 #carousel {
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
-}
-.carousel-inner {
-  max-height: 40rem!important;
-}
-
-
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
+  }
+  .carousel-inner {
+    max-height: 40rem!important;
+  }
 
 /*---Change Carousel Transition Speed --*/
+
 .carousel-item-next, 
 .carousel-item-prev,
 .carousel-item.active {
@@ -60,78 +72,59 @@ body {
 }
 
 /*-- Carousel Content --*/
+
 .img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.carousel-caption {
-  position: absolute;
-  top: 54%;
-  transform: translateY(-50%);
-}
-
-.bg-custom {
-  background-color: rgba(0, 0, 0, .4);
-  color: white;
-  border-radius: 1rem;
-}
-
-.carousel-caption h1 {
-  font-size: 2.0rem;
-  text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 1);
-}
-
-.border-primary {
-  border-top: .2rem solid #4981b3!important;
-}
-
-.carousel-caption h3 {
-  font-size: 1.5rem;
-  text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 1);
-}
-
-.btn-lg {
-  border-radius: 0;
-  text-transform: uppercase;
-  font-size: 1rem;
-  border-width: medium;
-}
-
-.btn-dark {
-  background-color: #ac2615;
-  border: .05rem solid #ac2615;
-}
-
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    top: 54%;
+    transform: translateY(-50%);
+  }
+  
+  .bg-custom {
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    border-radius: 1rem;
+  }
+  
+  .carousel-caption h1 {
+    font-size: 2.0rem;
+    text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 1);
+  }
+  
+  .border-primary {
+    border-top: .2rem solid #4981b3!important;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 1.5rem;
+    text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 1);
+  }
+  
+  .btn-lg {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-width: medium;
+  }
+  
+  .btn-dark {
+    background-color: #ac2615;
+    border: .05rem solid #ac2615;
+  }
 
 /*===== FIXED BACKGROUND IMG =====*/
 
-.fixed {
-  background-image: url('../img/carousel/3truck.jpg');
-  position: fixed;
-}
-.fixed-background {
-  padding: 10rem 0;
-}
-
 /*-- Emoji Navbar --*/
-/* .emoji {
-  background-image: linear-gradient(to right, #4981b3, #ac2615);
-  min-height: 0!important;
-  padding: .4rem 0!important;
-}
-.emoji .svg-inline--fa {
-  margin: 0 auto;
-  color: white;
-  font-size: 2rem;
-} */
-
 
 /*============= FOOTER =============*/
 footer {
   background-color: #383838;
-  padding: 1rem 2rem 3rem;  
+  padding: 1rem 2rem 3rem;
 }
 
 footer img {
@@ -139,7 +132,8 @@ footer img {
   margin: 1.5rem auto;
 }
 
-footer p, footer a,
+footer p,
+footer a,
 .socket a {
   color: white;
   text-decoration: none;
@@ -147,7 +141,7 @@ footer p, footer a,
 
 ul.social {
   list-style-type: none;
-  display: flex;  
+  display: flex;
   max-width: 16rem;
   margin: 0 auto;
   padding: 0;
@@ -165,35 +159,19 @@ footer .svg-inline--fa:hover {
   color: #68a0d2;
 }
 
-
 /*============= SOCKET =============*/
-
-
 
 /*============= MEDIA QUERIES =============*/
 
 /* Devices under 1199px (xl) */
+
 @media (max-width: 1199.98px) {
-  .carousel-caption h1 {
-    font-size: 2.8rem;    
-  }  
-  .carousel-caption h3 {
-    font-size: 1.8rem;    
-  }
-}
-/* Devices under 992px (lg) */
-@media (max-width: 991.98px) {
-  .carousel-caption h1 {
-    font-size: 2.4rem;    
-  }  
-  .carousel-caption h3 {
-    font-size: 1.4rem;    
-  }
-  .btn-lg {
-    font-size: 0.9rem;
-  }
 }
 
+/* Devices under 768px (md) */
+
+@media (max-width: 767.98px) {
+}
 
 /*============ BOOTSTRAP BREAK POINTS:
 
@@ -215,17 +193,21 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 /*-- Bootstrap Mobile Gutter Fix --*/
-.row, .container-fluid {
+
+.row,
+.container-fluid {
   margin-left: 0px !important;
   margin-right: 0px !important;
 }
 
 /*-- Fixed Background Image --*/
+
 .fixed-background {
   position: relative;
   width: 100%;
-  z-index: 1000!important;
+  z-index: 1000 !important;
 }
+
 .fixed-wrap {
   clip: rect(0, auto, auto, 0);
   position: absolute;
@@ -235,8 +217,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
   height: 100%;
   z-index: -999 !important;
 }
+
 .fixed {
-  z-index: -999!important;
+  z-index: -999 !important;
   display: block;
   top: 0;
   left: 0;
@@ -247,4 +230,8 @@ Extra (xl) large devices (large desktops, 1200px and up)
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   will-change: transform;
+}
+
+html {
+  scroll-behavior: smooth;
 }
